@@ -15,13 +15,15 @@ Used for exporting annotations from Kobo e-reader devices.
 4. The script will list all the books that have annotations. Enter the number of the book you want to export annotations for.
 5. The script will generate a CSV file with the annotations for the specified book and save it to `output/<bookname>_annotations_.csv`.
 
-### Recommended LLM prompt
+---
 
-> I'd like your help synthesizing my reading notes and annotations from [BOOK TITLE] by [AUTHOR].
-> Here are my annotations and highlights from my reading:
-`
-`CONTENT`
-`
+#### Recommended LLM prompt for further processing
+
+> I'd like your help synthesizing my reading notes and annotations from `BOOK TITLE` by `AUTHOR`.
+Here are my annotations and highlights from my reading:
+> 
+> `CONTENT`
+> 
 > Please create a comprehensive summary that:
 > 1. Starts with a 2-3 sentence overview of the book's core message and significance
 > 2. Organizes the key insights into 3-5 major themes or sections that emerged from the content
